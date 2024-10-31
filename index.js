@@ -1,23 +1,22 @@
-let nome = "Goku" 
-let quant_xp = 10050
+let vitorias = 50;
+let derrotas = 2;
+let saldoVitorias = vitorias - derrotas;
 let nivel;
 
-if (quant_xp <= 1000) {
+if (vitorias <= 10) {
     nivel = "Ferro";
-} else if (quant_xp <= 2000) {
+} else if (vitorias <= 20) {
     nivel = "Bronze";
-} else if (quant_xp <= 5000) {
+} else if (vitorias <= 50) {
     nivel = "Prata";
-} else if (quant_xp <= 7000){
+} else if (vitorias <= 80){
     nivel = "Ouro";
-} else if (quant_xp <= 8000) {
-    nivel = "Platina";
-} else if (quant_xp <= 9000) {
-    nivel = "Ascendente";
-} else if (quant_xp <= 10000) {
-    nivel = "Imortal";
+} else if (vitorias <= 90) {
+    nivel = "Diamante";
+} else if (vitorias <= 100) {
+    nivel = "Lendário";
 } else {
-    nivel = "Radiante";
+    nivel = "Imortal";
 }
 
-console.log(`O herói de nome é ${nome} e está no nível de ${nivel}`)
+console.log(`O herói tem saldo de ${saldoVitorias} e está no nível de ${nivel}`)
